@@ -237,6 +237,38 @@ body {
     margin-top: 15px;
 }
 
+/* Footer Styles */
+.site-footer {
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 2px solid #00ffcc; /* Neon line above footer */
+    color: #00ffcc;
+    font-size: 12px;
+    text-shadow: 0 0 5px #00ffcc;
+    background-color: rgba(0, 0, 10, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 0 20px #00ffcc;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #e0ffff; /* Lighter neon blue for links */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #ffcc00; /* Yellow on hover */
+    text-shadow: 0 0 8px #ffcc00;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .game-container {
@@ -275,6 +307,15 @@ body {
         left: 10px;
         top: 40px;
     }
+
+    .site-footer {
+        padding: 15px;
+        font-size: 10px;
+    }
+
+    .footer-links a {
+        margin: 0 5px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -309,5 +350,17 @@ body {
     .game-description-section h3,
     .affiliate-placeholder h3 {
         font-size: 16px;
+    }
+
+    .site-footer {
+        padding: 10px;
+        font-size: 9px;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
     }
 }
