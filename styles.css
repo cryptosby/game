@@ -255,12 +255,17 @@ body {
 
 .footer-links {
     margin-bottom: 10px;
+    /* Ensure links stay on one line if space allows */
+    white-space: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Allow horizontal scroll if necessary */
+    padding-bottom: 5px; /* Add some padding for scrollbar on mobile */
 }
 
 .footer-links a {
     color: #e0ffff; /* Lighter neon blue for links */
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 8px; /* Reduced horizontal margin between links */
+    font-size: 11px; /* Reduced font size for links */
     transition: color 0.2s ease, text-shadow 0.2s ease;
 }
 
@@ -314,7 +319,8 @@ body {
     }
 
     .footer-links a {
-        margin: 0 5px;
+        margin: 0 6px; /* Further reduced margin on smaller screens */
+        font-size: 10px; /* Further reduced font size on smaller screens */
     }
 }
 
@@ -358,9 +364,16 @@ body {
     }
 
     .footer-links {
+        /* On very small screens, allow wrapping if needed, but try to keep compact */
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: wrap; /* Allow wrapping */
         justify-content: center;
-        gap: 5px;
+        gap: 5px; /* Space between wrapped items */
+        white-space: normal; /* Allow normal wrapping */
+    }
+
+    .footer-links a {
+        margin: 0 4px; /* Minimal margin */
+        font-size: 9px; /* Smallest font size */
     }
 }
