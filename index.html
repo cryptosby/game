@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Brick Breaker: Blockchain Battle</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for crypto symbols (optional, but good for some icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <!-- Ad Placeholder Top -->
+        <div id="ad-top" class="ad-placeholder">
+            <!-- Your AdSense/Adsterra ad code will go here -->
+            <p>Advertisement</p>
+        </div>
+
+        <div class="game-container">
+            <div class="game-info">
+                <span id="portfolioValue">Portfolio Value: 0</span>
+                <span id="blockchainDepth">Blockchain Depth: 1</span>
+                <span id="walletBalance">Wallet Balance: 3</span>
+            </div>
+            <ul class="power-up-timers" id="powerUpTimers"></ul>
+            <canvas id="gameCanvas" width="600" height="450"></canvas>
+            <div class="message-box" id="messageBox">
+                <p id="messageText"></p>
+                <button id="messageButton">OK</button>
+            </div>
+        </div>
+
+        <!-- Ad Placeholder Bottom -->
+        <div id="ad-bottom" class="ad-placeholder">
+            <!-- Your AdSense/Adsterra ad code will go here -->
+            <p>Advertisement</p>
+        </div>
+
+        <!-- Game Description and Affiliate Section -->
+        <div class="game-description-section">
+            <h2>About Crypto Brick Breaker</h2>
+            <p>
+                Welcome to Crypto Brick Breaker: Blockchain Battle! This is a classic arcade game reimagined with a vibrant cryptocurrency theme. Your mission is to break through layers of crypto blocks, each representing a different digital asset, and build your portfolio value.
+            </p>
+            <h3>Game Elements:</h3>
+            <ul>
+                <li><strong>Crypto Blocks:</strong> Each block you destroy is a cryptocurrency. Break them to earn "Portfolio Value". Watch out for different types, some are tougher than others!</li>
+                <li><strong>Mining Rig (Paddle):</strong> Control your advanced mining rig to bounce the "Transaction Ball" and break crypto blocks.</li>
+                <li><strong>Transaction Ball:</strong> Your primary tool for interacting with the blockchain. Keep it in play!</li>
+                <li><strong>Wallet Balance (Lives):</strong> Represents your available funds or attempts. Don't let the Transaction Ball fall out of the network!</li>
+                <li><strong>Blockchain Depth (Level):</strong> As you clear all crypto blocks, you advance to the next "Blockchain Depth", facing new challenges and more valuable assets.</li>
+            </ul>
+            <h3>Power-Ups (Boost Your Crypto Journey!):</h3>
+            <ul>
+                <li>💎🙌 <strong>HODL (Wide Paddle):</strong> Expands your mining rig, making it easier to catch the Transaction Ball and secure your assets.</li>
+                <li>⛓️ <strong>Fork (Multi-Ball):</strong> Creates additional Transaction Balls, allowing you to process more transactions simultaneously and break blocks faster.</li>
+                <li>📜 <strong>Smart Contract (Fireball):</strong> Transforms your Transaction Ball into a powerful Smart Contract, capable of instantly executing and clearing multiple blocks.</li>
+            </ul>
+            <p>
+                This game is completely free to play and designed to be an innovative, fun, and engaging way to interact with cryptocurrency themes. Enjoy the blockchain battle!
+            </p>
+
+            <!-- Amazon Affiliate Placeholder - Generalized -->
+            <div id="amazon-affiliate" class="affiliate-placeholder">
+                <h3>Discover Trending Products!</h3>
+                <p>Looking for the latest gadgets, books, or home essentials? Explore a wide range of trending products on Amazon:</p>
+                <!-- Your Amazon Affiliate links/widgets will go here -->
+                <a href="https://www.amazon.com/gp/bestsellers/?tag=YOUR_AMAZON_TAG" target="_blank" rel="noopener noreferrer">Shop Bestsellers</a>
+                <a href="https://www.amazon.com/deals/?tag=YOUR_AMAZON_TAG" target="_blank" rel="noopener noreferrer">Check Today's Deals</a>
+                <p class="disclaimer">As an Amazon Associate, we earn from qualifying purchases.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
