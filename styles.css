@@ -274,6 +274,189 @@ body {
     text-shadow: 0 0 8px #ffcc00;
 }
 
+/* --- New Styles for About, FAQ, Privacy, Terms, Contact Pages --- */
+
+/* Header for content pages */
+.page-header {
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 20, 0.9);
+    border: 2px solid #00ffcc;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00ffcc;
+}
+
+.page-header h1 {
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc;
+    font-size: 24px; /* Adjust as needed */
+    margin: 0;
+}
+
+/* Main content section for pages */
+.page-content {
+    background-color: rgba(0, 0, 10, 0.7);
+    border: 2px solid #00ffcc;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #00ffcc;
+    padding: 30px;
+    margin-bottom: 30px; /* Space before footer */
+    width: 100%;
+    max-width: 700px;
+    color: #e0ffff;
+    font-size: 13px; /* Slightly smaller for readability on content pages */
+    line-height: 1.7;
+    text-align: justify; /* Justify text for a cleaner look */
+}
+
+.page-content h3 {
+    color: #ffcc00; /* Yellow for subheadings */
+    text-shadow: 0 0 5px #ffcc00;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 16px; /* Heading size */
+    text-align: left; /* Align headings left */
+}
+
+.page-content p {
+    margin-bottom: 15px;
+}
+
+.page-content ul {
+    list-style: disc; /* Use standard bullets for lists */
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.page-content ul li {
+    margin-bottom: 8px;
+    color: #e0ffff;
+}
+
+.page-content a {
+    color: #00aaff; /* Blue for links within content */
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.page-content a:hover {
+    color: #ffcc00;
+}
+
+.page-content .last-updated {
+    font-size: 11px;
+    color: #aaa;
+    text-align: right;
+    margin-top: 30px;
+}
+
+/* FAQ specific styles */
+.faq-item {
+    margin-bottom: 25px;
+    border-bottom: 1px dashed rgba(0, 255, 204, 0.2); /* Subtle separator */
+    padding-bottom: 15px;
+}
+
+.faq-item:last-child {
+    border-bottom: none; /* No border for the last item */
+}
+
+.faq-item h3 {
+    font-size: 15px;
+    color: #00ffcc; /* Question color */
+    text-shadow: 0 0 5px #00ffcc;
+    margin-bottom: 8px;
+}
+
+.faq-item p {
+    font-size: 13px;
+    color: #e0ffff; /* Answer color */
+}
+
+/* Contact page specific styles */
+.contact-methods p {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 30, 0.8);
+    border-radius: 10px;
+    border: 1px solid #00aaff;
+    box-shadow: 0 0 10px #00aaff;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 12px;
+    color: #00ffcc;
+    margin-bottom: 5px;
+    text-shadow: 0 0 3px #00ffcc;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #00aaff;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 50, 0.5);
+    color: #e0ffff;
+    font-family: Arial, sans-serif; /* Use a standard font for input */
+    font-size: 14px;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 170, 255, 0.5) inset;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    border-color: #ffcc00;
+    box-shadow: 0 0 8px #ffcc00 inset;
+}
+
+.submit-button {
+    padding: 12px 25px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    background: linear-gradient(145deg, #00ffcc, #00b38f);
+    color: #00001a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00ffcc;
+    transition: all 0.2s ease;
+    align-self: center; /* Center the button */
+    margin-top: 10px;
+}
+
+.submit-button:hover {
+    box-shadow: 0 0 15px #00ffcc, 0 0 5px #fff;
+    transform: scale(1.05);
+}
+
+.form-note {
+    font-size: 11px;
+    color: #aaa;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .game-container {
@@ -321,6 +504,38 @@ body {
     .footer-links a {
         margin: 0 6px; /* Further reduced margin on smaller screens */
         font-size: 10px; /* Further reduced font size on smaller screens */
+    }
+
+    /* Page specific responsive adjustments */
+    .page-header h1 {
+        font-size: 20px;
+    }
+    .page-content {
+        padding: 20px;
+        font-size: 12px;
+    }
+    .page-content h3 {
+        font-size: 14px;
+    }
+    .faq-item h3 {
+        font-size: 13px;
+    }
+    .faq-item p {
+        font-size: 12px;
+    }
+    .contact-form {
+        padding: 15px;
+    }
+    .form-group label {
+        font-size: 11px;
+    }
+    .form-group input, .form-group textarea {
+        font-size: 12px;
+        padding: 8px;
+    }
+    .submit-button {
+        font-size: 12px;
+        padding: 10px 20px;
     }
 }
 
@@ -375,5 +590,37 @@ body {
     .footer-links a {
         margin: 0 4px; /* Minimal margin */
         font-size: 9px; /* Smallest font size */
+    }
+
+    /* Page specific responsive adjustments */
+    .page-header h1 {
+        font-size: 18px;
+    }
+    .page-content {
+        padding: 15px;
+        font-size: 11px;
+    }
+    .page-content h3 {
+        font-size: 13px;
+    }
+    .faq-item h3 {
+        font-size: 12px;
+    }
+    .faq-item p {
+        font-size: 11px;
+    }
+    .contact-form {
+        padding: 10px;
+    }
+    .form-group label {
+        font-size: 10px;
+    }
+    .form-group input, .form-group textarea {
+        font-size: 11px;
+        padding: 6px;
+    }
+    .submit-button {
+        font-size: 11px;
+        padding: 8px 15px;
     }
 }
